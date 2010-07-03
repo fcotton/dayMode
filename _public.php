@@ -58,7 +58,7 @@ class dayModeTemplates
 	{
 		if ($GLOBALS['_ctx']->exists("day")) {
 			$trg = 'day';
-			$format = $GLOBALS['core']->blog->settings->date_format;
+			$format = $GLOBALS['core']->blog->settings->system->date_format;
 		} else {
 			$trg = 'archives';
 			$format = '%B %Y';
