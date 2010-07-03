@@ -158,8 +158,7 @@ class dayModeUrlHandlers extends dcUrlHandlers
 	{
 		global $_ctx,$core;
 		
-		if (preg_match('|^/([0-9]{4})/([0-9]{2})/([0-9]{2})$|',$args,$m))
-		{
+		if (preg_match('|^/([0-9]{4})/([0-9]{2})/([0-9]{2})$|',$args,$m)) {
 			$params['year']	  = $m[1];
 			$params['month']	  = $m[2];
 			$params['day']		  = $m[3];
@@ -171,9 +170,10 @@ class dayModeUrlHandlers extends dcUrlHandlers
 			}
 
 			self::serveDocument('archive_day.html');
-			exit;
 		}
-		parent::archive($args);
+		else {
+			parent::archive($args);
+		}
 	}
 }
 ?>
