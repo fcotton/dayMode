@@ -15,7 +15,7 @@ $this->registerModule(
 	/* Name */		"dayMode",
 	/* Description*/	"Provides daily archives and an associated calendar widget.",
 	/* Author */		"Pep and contributors",
-	/* Version */		'1.1-RC1',
+	/* Version */		'1.1-RC2',
 	/* Permissions */	'admin'
 );
 ?>
